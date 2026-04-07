@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Eclipse Ediciones damos vida a tus ideas e historias. Descubre nuestro catálogo de literatura de fantasía bajo una luz nueva. Calidad editorial y mundos inolvidables.">
+    <title>Eclipse Ediciones | Editorial de Literatura de Fantasía</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-crema: #F9F7F2;
+            --color-texto: #2C2C2C;
+            --color-naranja-suave: #FFB37B;
+            --color-eclipse: #1A1A1A;
+            --fuente-titulo: 'Playfair Display', serif;
+            --fuente-cuerpo: 'Lora', serif;
+            --fuente-inter: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--color-crema);
+            color: var(--color-texto);
+            font-family: var(--fuente-cuerpo);
+            line-height: 1.6;
+        }
+
+        /* --- Header & Logo --- */
+        header {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: var(--color-texto);
+        }
+
+        .eclipse-logo {
+            width: 40px;
+            height: 40px;
+            background: var(--color-eclipse);
+            border-radius: 50%;
+            position: relative;
+            box-shadow: inset -8px 0px 10px -2px var(--color-naranja-suave);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--color-texto);
+            font-family: var(--fuente-inter);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 100px 10%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: var(--fuente-titulo);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-eclipse);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        /* --- Botones CTA --- */
+        .cta-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-family: var(--fuente-inter);
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--color-eclipse);
+            color: var(--color-crema);
+        }
+
+        .btn-secondary {
+            border: 1px solid var(--color-eclipse);
+            color: var(--color-eclipse);
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+
+        /* --- Content Sections --- */
+        section { padding: 80px 10%; }
+
+        .featured-books { background: #F1EFE9; }
+
+        h2 { font-family: var(--fuente-titulo); font-size: 2.5rem; margin-bottom: 2rem; }
+        h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+        h4 { font-family: var(--fuente-inter); color: var(--color-naranja-suave); margin-bottom: 0.5rem; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .book-card img {
+            width: 100%;
+            height: auto;
+            filter: sepia(20%);
+            margin-bottom: 15px;
+        }
+
+        /* --- Cookies Banner --- */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: var(--color-eclipse);
+            color: white;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--fuente-inter);
+            font-size: 0.8rem;
+            z-index: 1000;
+        }
+
+        #accept-cookies {
+            background: var(--color-naranja-suave);
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 40px 10%;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .external-links { margin-top: 10px; }
+        .external-links a { color: var(--color-eclipse); margin: 0 10px; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo-container">
+            <div class="eclipse-logo" aria-label="Logo Eclipse Ediciones"></div>
+            <span style="font-family: var(--fuente-titulo); font-size: 1.4rem;">Eclipse Ediciones</span>
+        </a>
+        <nav>
+            <a href="/catalogo-fantasia">Catálogo</a>
+            <a href="/autores">Autores</a>
+            <a href="/blog-literario">Blog</a>
+            <a href="/contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h4>Editoriales de fantasía en España</h4>
+            <h1>Donde los mundos imaginarios cobran vida</h1>
+            <p>En <strong>Eclipse Ediciones</strong> damos vida a tus ideas e historias. Somos una editorial especializada en literatura fantástica, épica y realismo mágico, cuidando cada edición como una obra de arte única.</p>
+            
+            <div class="cta-container">
+                <a href="/novedades-literarias" class="btn btn-primary">Descubrir Novedades</a>
+                <a href="/enviar-manuscrito" class="btn btn-secondary">Publicar con Nosotros</a>
+            </div>
+        </section>
+
+        <section class="featured-books">
+            <h2>Nuestra Filosofía Editorial</h2>
+            <p>Buscamos la excelencia en la <strong>narrativa de fantasía</strong>. Creemos que cada libro es un eclipse: un momento de asombro donde la realidad se oscurece para dejar brillar la magia.</p>
+            
+            <div class="grid">
+                <article class="book-card">
+                    <img src="https://via.placeholder.com/300x450/e0ddd5/1a1a1a?text=Libro+I" alt="Portada del libro de fantasía épica El Renacer del Eclipse">
+                    <h3>Fantasía Épica</h3>
+                    <p>Explora sagas que redefinen el género con sistemas de magia innovadores.</p>
+                    <h5>Subgéneros destacados</h5>
+                    <h6>Grimdark, High Fantasy y Sword & Sorcery</h6>
+                </article>
+
+                <article class="book-card">
+                    <img src="https://via.placeholder.com/300x450/e0ddd5/1a1a1a?text=Libro+II" alt="Portada de novela de realismo mágico Sombras de Arena">
+                    <h3>Realismo Mágico</h3>
+                    <p>Historias donde lo cotidiano y lo extraordinario conviven en perfecta armonía.</p>
+                    <a href="/genero/realismo-magico" style="color: var(--color-eclipse);">Ver colección →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eclipse Ediciones. Todos los derechos reservados.</p>
+        <div class="external-links">
+            <a href="https://wwww.instagram.com/eclipse_ediciones" rel="nofollow">Instagram</a> | 
+            <a href="https://www.goodreads.com" rel="noopener" target="_blank">Reseñas en Goodreads</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.7rem;">
+            Explora más: <a href="/politica-privacidad">Política de Privacidad</a> | <a href="/aviso-legal">Aviso Legal</a>
+        </p>
+    </footer>
+
+    <div id="cookie-banner">
+        <span>Utilizamos cookies propias y de terceros para mejorar tu experiencia literaria.</span>
+        <button id="accept-cookies" onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
+    </div>
+
+    <div style="display:none;">
+        <a href="https://blogdellector.com/mejores-editoriales-fantasia">Mención en Blog del Lector</a>
+        <a href="https://asociacionescritores.org/eclipse-ediciones">Referencia en Asociación de Escritores</a>
+    </div>
+
+</body>
+</html>
